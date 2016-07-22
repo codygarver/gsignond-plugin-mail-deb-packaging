@@ -1,0 +1,32 @@
+Source: gsignond-plugin-mail
+Section: admin
+Priority: optional
+Maintainer: Corentin Noël <corentin@elementary.io>
+Build-Depends: cmake (>= 2.8),
+               debhelper (>= 9),
+               libaccounts-glib-dev,
+               libglib2.0-dev (>= 2.32.0),
+               libgsignon-glib-dev,
+               libgsignond-common-dev,
+               libpantheon-online-accounts-dev,
+               valac (>= 0.28)
+Standards-Version: 3.9.5
+Homepage: https://launchpad.net/gsignond-plugin-mail
+Vcs-Bzr: lp:gsignond-plugin-mail
+Vcs-Browser: https://code.launchpad.net/~elementary-pantheon/gsignond-plugin-mail/trunk
+
+Package: gsignond-plugin-mail
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Enhances: switchboard, gsignond, switchboard-plug-online-accounts
+Recommends: pantheon-online-accounts-plugin-mail
+Description: gSSO Mail plugin
+ Mail plugin for GLib based Single Sign-On
+
+Package: pantheon-online-accounts-plugin-mail
+Architecture: any
+Depends: gsignond-plugin-mail, ${misc:Depends}, ${shlibs:Depends}
+Description: Online Accounts plugin for single signon - Mail
+ Online accounts plugin for single signon
+
