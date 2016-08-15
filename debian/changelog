@@ -1,5 +1,5 @@
-gsignond-plugin-mail (0.1.0) UNRELEASED; urgency=low
+gsignond-plugin-mail (0.1.0) xenial; urgency=low
 
   * Initial Release.
 
- -- Corentin "tintou" Noël <corentin@elementary.io>  Sat, 23 Jul 2016 01:08:15 +0100
+ -- Cody Garver <cody@elementary.io>  Mon, 15 Aug 2016 11:15:28 -0500
